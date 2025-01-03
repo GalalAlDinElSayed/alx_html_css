@@ -1,0 +1,49 @@
+/* تحويل <body> إلى حاوية مرنة */
+body {
+    display: flex;
+    flex-direction: column; /* ترتيب عمودي */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    height: 100vh; /* جعل الارتفاع يغطي الشاشة بالكامل */
+}
+
+/* تحويل <main> إلى حاوية مرنة */
+main {
+    display: flex;
+    flex-direction: row; /* ترتيب أفقي */
+    flex: auto; /* يسمح لـ main بالتكيف حسب المساحة */
+}
+
+/* تخصيص مساحة article و aside */
+article {
+    flex: 2; /* يأخذ 2 جزء من المساحة */
+    overflow-y: auto; /* تمكين التمرير الرأسي */
+}
+
+aside {
+    flex: 1; /* يأخذ 1 جزء من المساحة */
+    overflow-y: auto; /* تمكين التمرير الرأسي */
+}
+
+/* تحسين العرض بشكل عام */
+header, footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+aside {
+    background-color: #e9e9e9;
+    padding: 10px;
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+}
+ 
