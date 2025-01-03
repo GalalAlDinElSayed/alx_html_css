@@ -183,10 +183,42 @@ aside {
     background-color: #45a049;
 }
 
+/* تنسيق قسم الأسئلة المتكررة (FAQ) */
+.faq {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background-color: #fff;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+}
+
 /* تنسيق الفوتر */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
