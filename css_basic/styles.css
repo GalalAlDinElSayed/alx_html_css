@@ -1,53 +1,67 @@
 /* إعدادات أساسية لتصميم الصفحة */
 body {
-    display: flex;
-    flex-direction: column; /* ترتيب عمودي */
+    background-color: #f0f0f0; /* خلفية فاتحة لجميع الصفحات */
+    font-family: Arial, sans-serif; /* تغيير الخط */
     margin: 0;
     height: 100vh; /* جعل الارتفاع يغطي الشاشة بالكامل */
-}
-
-/* تحويل <main> إلى حاوية مرنة */
-main {
     display: flex;
-    flex-direction: row; /* ترتيب أفقي */
-    flex: auto; /* يسمح لـ main بالتكيف حسب المساحة */
+    flex-direction: column; /* ترتيب عمودي */
 }
 
-/* تخصيص مساحة article و aside */
-article {
-    flex: 2; /* يأخذ 2 جزء من المساحة */
-    overflow-y: auto; /* تمكين التمرير الرأسي */
-}
-
-aside {
-    flex: 1; /* يأخذ 1 جزء من المساحة */
-    overflow-y: auto; /* تمكين التمرير الرأسي */
-}
-
-/* تحسين العرض بشكل عام */
+/* تخصيص الخلفية والعناصر الأساسية */
 header, footer {
-    background-color: #ccc;
+    background-color: #4CAF50; /* خلفية رأس وذيل الصفحة باللون الأخضر */
+    color: white; /* النص باللون الأبيض */
+    padding: 15px; /* إضافة بعض الحواف */
     text-align: center;
-    padding: 10px;
 }
 
 article {
-    background-color: #f9f9f9;
-    padding: 10px;
+    background-color: #ffffff; /* خلفية المقالة بيضاء */
+    border-radius: 8px; /* حواف دائرية */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    padding: 20px;
+    margin: 15px 0; /* إضافة مسافات بين المقالات */
 }
 
 aside {
-    background-color: #e9e9e9;
-    padding: 10px;
+    background-color: #f4f4f4; /* خلفية فاتحة للمحتوى الجانبي */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
 }
 
-footer {
-    background-color: #ddd;
-    text-align: center;
-    padding: 10px;
+/* تخصيص النص */
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333333; /* نص غامق لتمييز العناوين */
 }
 
-/* تحسين التصميم للأجهزة الصغيرة (الهواتف المحمولة) */
+article p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+/* تخصيص الروابط */
+a {
+    color: #4CAF50; /* اللون الأخضر للروابط */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* إضافة تحته خط عند المرور بالماوس */
+}
+
+/* تخصيص الشعار */
+.logo {
+    font-size: 32px; /* زيادة حجم الشعار */
+    color: #ff4081; /* لون الشعار */
+    margin-right: 10px; /* إضافة مسافة بين الشعار والعناصر الأخرى */
+    vertical-align: middle; /* محاذاة الشعار مع النص */
+}
+
+/* تخصيص المحتوى عندما تكون الشاشة صغيرة */
 @media (max-width: 768px) {
     body.works_on_smartphone {
         font-size: 14px; /* تقليل حجم النص على الشاشات الصغيرة */
