@@ -1,56 +1,119 @@
-/* تنسيق الـ Header */
+/* تنسيق عام لجميع الصفحات */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* تنسيق الهيدر */
 header {
-    background-color: #123456; /* اختر اللون بناءً على Figma */
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #333;
     color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 header ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    text-align: left;
+    padding-left: 20px;
 }
 
-header ul li {
-    display: inline-block;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-/* تنسيق الشعار */
 header .logo {
-    font-size: 36px;
-    color: white;
+    font-size: 30px;
+    margin-right: 15px;
 }
 
-/* تنسيق الـ Banner (القسم الأول) */
-section.banner {
-    background-image: url('path-to-banner-image.jpg'); /* ضع مسار الصورة حسب التصميم */
-    background-size: cover;
-    background-position: center;
+/* تنسيق الروابط في الهيدر */
+header a {
     color: white;
-    padding: 100px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* تنسيق القسم الأول (Banner) */
+.banner {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding: 50px 20px;
 }
 
-section.banner h1 {
-    font-size: 48px;
+.banner h1 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+/* تنسيق الـ main */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 10%;
+}
+
+article {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق قسم الاقتباسات */
+blockquote {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #555555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote p {
     margin: 0;
 }
 
-section.banner p {
+blockquote footer {
     font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-align: right;
     margin-top: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
