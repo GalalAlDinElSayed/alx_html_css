@@ -1,1 +1,56 @@
-ECHO is on.
+/* تنسيق الـ Header */
+header {
+    background-color: #123456; /* اختر اللون بناءً على Figma */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* تنسيق الشعار */
+header .logo {
+    font-size: 36px;
+    color: white;
+}
+
+/* تنسيق الـ Banner (القسم الأول) */
+section.banner {
+    background-image: url('path-to-banner-image.jpg'); /* ضع مسار الصورة حسب التصميم */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+section.banner p {
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
