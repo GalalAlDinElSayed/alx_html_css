@@ -1,8 +1,8 @@
-/* تحويل <body> إلى حاوية مرنة */
+/* إعدادات أساسية لتصميم الصفحة */
 body {
     display: flex;
     flex-direction: column; /* ترتيب عمودي */
-    margin: 0; /* إزالة الهوامش الافتراضية */
+    margin: 0;
     height: 100vh; /* جعل الارتفاع يغطي الشاشة بالكامل */
 }
 
@@ -46,4 +46,22 @@ footer {
     text-align: center;
     padding: 10px;
 }
- 
+
+/* تحسين التصميم للأجهزة الصغيرة (الهواتف المحمولة) */
+@media (max-width: 768px) {
+    body.works_on_smartphone {
+        font-size: 14px; /* تقليل حجم النص على الشاشات الصغيرة */
+    }
+
+    header, footer {
+        padding: 8px; /* تقليل الحواف */
+    }
+
+    main {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    }
+
+    article, aside {
+        flex: 1; /* جعل المقالة والمحتوى الجانبي يأخذون نفس المساحة */
+    }
+}
