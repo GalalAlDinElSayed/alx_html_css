@@ -83,34 +83,7 @@ aside {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* تنسيق قسم الاقتباسات */
-blockquote {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    font-size: 24px;
-    color: #555555;
-    border-left: 4px solid #4CAF50;
-    padding-left: 20px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-blockquote p {
-    margin: 0;
-}
-
-blockquote footer {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
-    text-align: right;
-    margin-top: 10px;
-}
-
-/* تنسيق الفيديوهات */
+/* تنسيق قسم الفيديوهات */
 .videos-list {
     padding: 30px;
     background-color: #f9f9f9;
@@ -147,6 +120,67 @@ blockquote footer {
 .video-card p {
     font-size: 16px;
     color: #666;
+}
+
+/* تنسيق قسم العضوية */
+.membership {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.membership-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+}
+
+.membership-card h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.membership-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.membership-card .price {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.membership-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.membership-card button:hover {
+    background-color: #45a049;
 }
 
 /* تنسيق الفوتر */
